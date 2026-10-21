@@ -2,7 +2,7 @@
 
 Buildless HTML/CSS/JavaScript portfolio. Serve `dist/` with any static HTTP server.
 
-- Six projects: one independently completed classroom design project, four Taihu Stone oil paintings, one AI poster/video series.
+- Twelve entries: one independently completed classroom design project, five Taihu Stone paintings, five Wuyuan landscape studies, and one AI poster/video series. Painting detail navigation stays within its series.
 - Sphere coordinates use real 3D rotation and perspective projection, with accessible DOM image buttons.
 - Drag and wheel rotation, inertial motion, automatic rotation toggle, category filtering, grid view, native accessible dialogs, full project galleries, video and biography.
 - No invented contact details, artwork dates, dimensions or project awards.
