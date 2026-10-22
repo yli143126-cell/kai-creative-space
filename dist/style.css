@@ -12,7 +12,7 @@ dialog{border:0;background:var(--paper);color:var(--ink);padding:0}dialog::backd
 @media(min-width:761px) and (max-width:1440px){.space-index{display:none}}
 
 /* Internship projects: full artwork proportions, paced editorial sections. */
-.banner-cover{display:flex;width:100%;aspect-ratio:16/9;padding:6%;gap:6%;flex-direction:column;justify-content:center;background:#efeee9;overflow:hidden}
+.banner-cover{display:flex;width:100%;aspect-ratio:7/5;padding:5%;gap:4%;flex-direction:column;justify-content:center;background:#efeee9;overflow:hidden}
 .banner-cover img{display:block;width:100%;height:auto;flex:none;box-shadow:none}
 .grid-image .banner-cover{width:100%;height:auto}.grid-image .banner-cover img{height:auto;object-fit:contain}
 .project-credit{max-width:1150px;margin:0 auto 70px;border-top:1px solid var(--line);padding-top:24px;display:grid;grid-template-columns:90px 1fr;gap:12px 20px;font-size:12px;line-height:1.9}.project-credit>span{color:var(--muted)}.project-credit p{margin:0;max-width:650px}
