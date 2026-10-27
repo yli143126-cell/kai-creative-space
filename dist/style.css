@@ -31,3 +31,7 @@ dialog{border:0;background:var(--paper);color:var(--ink);padding:0}dialog::backd
 @media(min-width:761px) and (max-width:1050px){.filter{padding:11px 13px}.filter span{margin-left:6px}}
 @media(max-width:760px){.filters{gap:0;max-width:94vw}.filter{padding:9px 11px}.filter span{margin-left:5px}.theatre-feature{padding:0 6% 40px}.theatre-hero>img{min-height:360px;object-fit:cover;object-position:60% center}.theatre-invitation{padding:25px;background:linear-gradient(0deg,#090b0be6,transparent)}.theatre-invitation p{font-size:26px;margin:12px 0 20px}.theatre-context{grid-template-columns:1fr;gap:20px;padding:32px 0}.theatre-scenes{grid-template-columns:1fr;gap:26px}.theatre-scenes figcaption{padding-top:12px}.theatre-note{margin-top:22px}}
 @media(max-width:360px){.filter{padding:9px 8px}.filter span{margin-left:4px}}
+
+/* Keep the portrait AI film at its original 9:16 aspect ratio. */
+.gallery .portrait-video{width:min(100%,420px);justify-self:center;overflow:visible}
+.gallery .portrait-video video{width:100%;height:auto;max-height:none;aspect-ratio:9/16;object-fit:contain}
