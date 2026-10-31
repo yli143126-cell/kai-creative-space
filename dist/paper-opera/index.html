@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151511">
+  <title>纸上梨园｜三联屏交互体验</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="stage" aria-label="纸上梨园三联屏交互展览">
+    <section id="home" class="screen is-active" aria-label="选择戏曲人物">
+      <img class="artwork" src="assets/首页.png" alt="纸上梨园三联屏首页：关羽、穆桂英、孙悟空、包公、猪八戒" draggable="false">
+      <div id="glow-layer" class="glow-layer" aria-hidden="true"></div>
+      <svg id="hotspots" class="hotspots" viewBox="0 0 1629 965" preserveAspectRatio="none" role="group" aria-label="选择戏曲人物"></svg>
+    </section>
+
+    <section id="detail" class="screen" aria-label="人物介绍" aria-hidden="true">
+      <img id="detail-image" class="artwork" alt="" draggable="false">
+      <button id="back-button" class="control back-button" type="button" aria-label="返回首页">← 返回首页</button>
+    </section>
+
+    <button id="fullscreen-button" class="control fullscreen-button" type="button" aria-label="切换全屏">⛶ 全屏</button>
+    <div id="status" class="sr-only" role="status" aria-live="polite"></div>
+  </main>
+</body>
+</html>

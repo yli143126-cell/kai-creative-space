@@ -1,0 +1,23 @@
+:root { color-scheme: dark; font-family: "Songti SC", "Noto Serif CJK SC", serif; }
+* { box-sizing: border-box; }
+html, body { width: 100%; height: 100%; margin: 0; }
+body { display: grid; place-items: center; overflow: hidden; background: #151511; }
+.stage { position: relative; width: min(100vw, 168.808vh); aspect-ratio: 1629 / 965; overflow: hidden; background: #ece5d4; }
+.screen { position: absolute; inset: 0; opacity: 0; visibility: hidden; pointer-events: none; transition: opacity .4s ease, visibility 0s linear .4s; }
+.screen.is-active { opacity: 1; visibility: visible; pointer-events: auto; transition: opacity .4s ease, visibility 0s; }
+.artwork { display: block; width: 100%; height: 100%; object-fit: contain; user-select: none; }
+.glow-layer, .glow, .glow::before { position: absolute; inset: 0; pointer-events: none; }
+.glow { opacity: 0; transition: opacity .3s ease; }
+.glow::before { content: ""; background-image: var(--glow-image); background-size: 100% 100%; animation: gentle-breath 2.6s ease-in-out infinite alternate; }
+.glow.is-lit { opacity: .9; }
+.glow.is-pressed { opacity: 1; }
+@keyframes gentle-breath { from { opacity: .86; } to { opacity: 1; } }
+.hotspots { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.hotspot { fill: transparent; stroke: none; cursor: pointer; outline: none; }
+.control { position: absolute; z-index: 2; border: 1px solid rgba(126, 71, 38, .58); border-radius: 3px; background: rgba(246, 236, 213, .93); color: #61231d; font: 600 clamp(10px, 1.05vw, 16px) "Songti SC", "Noto Serif CJK SC", serif; letter-spacing: .08em; padding: .48em .85em; cursor: pointer; box-shadow: 0 2px 8px rgba(35, 23, 12, .18); }
+.control:hover, .control:focus-visible { background: #fff2d8; outline: 2px solid #9c3a26; outline-offset: 2px; }
+.back-button { top: 2%; left: 1.5%; }
+.fullscreen-button { right: 1.5%; bottom: 2%; opacity: .84; }
+.fullscreen-button:hover, .fullscreen-button:focus-visible { opacity: 1; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+@media (prefers-reduced-motion: reduce) { .screen, .screen.is-active, .glow { transition-duration: .01ms; } .glow::before { animation: none; } }
